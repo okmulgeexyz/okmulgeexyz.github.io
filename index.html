@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okmulgee.xyz</title>
+  <style>
+    /* River & Sky Color Theme with Responsive Fixes */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8FCFD1; /* Sky Blue backdrop */
+      color: #323232; /* Charcoal text */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #0F5F67; /* Deep Teal */
+      color: #E8D2A6; /* Sandstone text */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #F2994A; /* Sunset Orange */
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #E8D2A6; /* Sandstone links */
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #0F5F67; /* Deep Teal hover */
+    }
+    main {
+      background-color: #E8D2A6; /* Sandstone content bg */
+      color: #323232;
+      padding: 2rem;
+      margin: 1rem auto;
+      width: 95%;
+      max-width: 1200px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      flex-grow: 1;
+    }
+    footer {
+      background-color: #0F5F67; /* Deep Teal */
+      color: #E8D2A6;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
+        margin: 0.25rem 0;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      main {
+        width: 100%;
+        margin: 0.5rem auto;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Okmulgee.xyz</h1>
+    <p>Your Town. Your Stories. Your Connection.</p>
+  </header>
+  <nav>
+    <a href="index.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="lists.html">Lists</a>
+    <a href="directory.html">Business Directory</a>
+    <a href="classifieds.html">Classifieds</a>
+    <a href="merch.html">Merchandise</a>
+    <a href="awards.html">Awards</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Welcome to Okmulgee.xyz</h2>
+    <p>Explore local news, events, businesses, and more in and around Okmulgee County.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+  </footer>
+</body>
+</html>
