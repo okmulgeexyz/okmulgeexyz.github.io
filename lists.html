@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Okmulgee.xyz — Top Lists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0;
+      background: #8FCFD1; /* blue background */
+      color: #000;
+    }
+    header {
+      background-color: #0F5F67; /* dark teal */
+      color: #E8D2A6; /* light cream */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #F2994A; /* warm orange */
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #E8D2A6;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      background: #0F5F67;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+      background: #fff; /* white background */
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #0F5F67;
+    }
+    .list-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .date-posted {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0F5F67;
+      color: #E8D2A6;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Okmulgee.xyz</h1>
+  <p>Your Town. Your Stories. Your Connection.</p>
+</header>
+
+<nav>
+  <a href="index.html">News</a>
+  <a href="events.html">Events</a>
+  <a href="lists.html" aria-current="page">Lists</a>
+  <a href="directory.html">Business Directory</a>
+  <a href="classifieds.html">Classifieds</a>
+  <a href="merch.html">Merchandise</a>
+  <a href="awards.html">Awards</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Top Lists</h1>
+
+  <div class="list-section">
+    <h2><a href="top-10-movies.html">Top 10 Movies</a></h2>
+    <div class="date-posted">Posted: June 25, 2025</div>
+    <p>A list of the greatest films of all time.</p>
+  </div>
+
+  <div class="list-section">
+    <h2><a href="top-10-songs.html">Top 10 Songs</a></h2>
+    <div class="date-posted">Posted: June 25, 2025</div>
+    <p>Timeless songs that defined generations.</p>
+  </div>
+
+  <div class="list-section">
+    <h2><a href="top-10-inventions.html">Top 10 Inventions</a></h2>
+    <div class="date-posted">Posted: June 25, 2025</div>
+    <p>The most impactful inventions in human history.</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+</footer>
+
+</body>
+</html>

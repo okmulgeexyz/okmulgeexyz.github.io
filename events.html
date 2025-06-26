@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events — Okmulgee.xyz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #8FCFD1; /* your blue background */
+      color: #000; /* black text for readability */
+    }
+    header {
+      background-color: #0F5F67; /* dark teal */
+      color: #E8D2A6; /* light cream */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #F2994A; /* warm orange */
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #E8D2A6; /* cream */
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background: #0F5F67;
+    }
+    nav a[aria-current="page"] {
+      background: #0F5F67;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #000;
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #0F5F67;
+    }
+    section#pricing {
+      background: #fff8f2;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      border: 1px solid #f2c96d;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .event-listing {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .event-listing li {
+      background: #fff8f2;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 6px;
+      border-left: 6px solid transparent;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    /* Featured highlight */
+    .event-listing li.featured {
+      border-left-color: #F2994A;
+      background: #fff3d6;
+    }
+    .event-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 0 0 0.3rem 0;
+      color: #0F5F67;
+    }
+    .event-date {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .event-details {
+      margin: 0;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Okmulgee.xyz — Events</h1>
+</header>
+
+<nav>
+  <a href="index.html">News</a>
+  <a href="events.html" aria-current="page">Events</a>
+  <a href="lists.html">Lists</a>
+  <a href="directory.html">Business Directory</a>
+  <a href="classifieds.html">Classifieds</a>
+  <a href="merch.html">Merchandise</a>
+  <a href="awards.html">Awards</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <section id="event-list">
+    <h2>Upcoming Events</h2>
+    <ul class="event-listing">
+      <li class="featured">
+        <div class="event-title">Okmulgee BBQ Festival</div>
+        <div class="event-date">June 14, 2025 — 12:00 PM to 6:00 PM</div>
+        <p class="event-details">City Park, 123 Park Ave. Family fun, live music, food vendors, and contests!</p>
+      </li>
+      <li>
+        <div class="event-title">Local Library Book Sale</div>
+        <div class="event-date">June 20, 2025 — 9:00 AM to 5:00 PM</div>
+        <p class="event-details">Okmulgee Public Library, 45 Library St. Gently used books at great prices.</p>
+      </li>
+      <li>
+        <div class="event-title">Community Yoga Class</div>
+        <div class="event-date">June 21, 2025 — 6:00 PM to 7:00 PM</div>
+        <p class="event-details">Wellness Center, 78 Wellness Rd. All levels welcome. Donation-based.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="submit-info" style="margin-top: 2rem;">
+    <h2>Submit Your Event</h2>
+    <p>Ready to share your event with Okmulgee? Please send us your event details including title, date/time, location, description, and organization type.</p>
+    <p>We accept submissions via email at <a href="mailto:events@okmulgee.xyz">events@okmulgee.xyz</a>.</p>
+    <p>If you have questions about pricing or discounts, just ask!</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Event Listing Pricing</h2>
+    <p>We want everyone in our community to share their events. Here’s our pricing model:</p>
+    <table>
+      <thead>
+        <tr><th>Event Type</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Nonprofits, Schools, Government</td><td><strong>Free</strong></td></tr>
+        <tr><td>Small Personal Events (e.g., birthday parties, meetups)</td><td>$1 <em>or free on request for hardship</em></td></tr>
+        <tr><td>Small Business or Community Events (under 25 people)</td><td>$3</td></tr>
+        <tr><td>Medium Events (25–100 people)</td><td>$10</td></tr>
+        <tr><td>Large Events (100+ people)</td><td>$20</td></tr>
+      </tbody>
+    </table>
+    <p class="note">If you are low-income or experiencing hardship, please contact us — we offer <strong>50% discounts or full waivers</strong> on request. No paperwork needed.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+</footer>
+
+</body>
+</html>

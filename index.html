@@ -48,6 +48,9 @@
     nav a:hover {
       background-color: #0F5F67; /* Deep Teal hover */
     }
+    nav a[aria-current="page"] {
+      background: #0F5F67;
+    }
     main {
       background-color: #E8D2A6; /* Sandstone content bg */
       color: #323232;
@@ -94,11 +97,11 @@
 </head>
 <body>
   <header>
-    <h1>Okmulgee.xyz</h1>
+    <h1>OKMULGEE.XYZ</h1>
     <p>Your Town. Your Stories. Your Connection.</p>
   </header>
   <nav>
-    <a href="index.html">News</a>
+    <a href="index.html" aria-current="page">News</a>
     <a href="events.html">Events</a>
     <a href="lists.html">Lists</a>
     <a href="directory.html">Business Directory</a>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Okmulgee.xyz</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #8FCFD1; color: #323232; }
+    header, footer { background-color: #0F5F67; color: #E8D2A6; text-align: center; padding: 1rem; }
+    nav { background: #F2994A; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; padding: 0.5rem; }
+    nav a { color: #E8D2A6; text-decoration: none; font-weight: bold; padding: 0.5rem; border-radius: 4px; }
+    nav a:hover { background: #0F5F67; }
+    nav a[aria-current="page"] { background: #0F5F67; }
+    main { max-width: 800px; margin: 2rem auto; background: #E8D2A6; padding: 2rem; border-radius: 6px; }
+    .contact-info { font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .contact-info span { display: inline-block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Okmulgee.xyz</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="lists.html">Lists</a>
+    <a href="directory.html">Business Directory</a>
+    <a href="classifieds.html">Classifieds</a>
+    <a href="merch.html">Merchandise</a>
+    <a href="awards.html">Awards</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p class="contact-info">Have questions or submissions? Reach out via email:</p>
+    <p id="email-container" class="contact-info"></p>
+    <script>
+      (function(){
+        var user = "okmulgeexyz";
+        var domain = "gmail.com";
+        var addr = user + "@" + domain;
+        var a = document.createElement('a');
+        a.href = 'mailto:' + addr;
+        a.textContent = addr;
+        document.getElementById('email-container').appendChild(a);
+      })();
+    </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+  </footer>
+</body>
+</html>
