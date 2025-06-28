@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Okmulgee.xyz — Merchandise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #8FCFD1;
+      color: #000;
+    }
+    header {
+      background-color: #0F5F67;
+      color: #E8D2A6;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #F2994A;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #E8D2A6;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      background: #0F5F67;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #0F5F67;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .product a:hover {
+      background-color: #0c4e54;
+    }
+    @media (max-width: 768px) {
+      .product {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Okmulgee.xyz</h1>
+    <p>Your Town. Your Stories. Your Connection.</p>
+  </header>
+  <nav>
+    <a href="index.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="lists.html">Lists</a>
+    <a href="directory.html">Business Directory</a>
+    <a href="classifieds.html">Classifieds</a>
+    <a href="merch.html" aria-current="page">Merchandise</a>
+    <a href="">Awards</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Merchandise</h2>
+    <p>Support the site and show your town pride with our official Okmulgee gear.</p>
+
+    <div class="products">
+      <div class="product">
+        <img src="images/deep-fork-shirt.jpg" alt="Deep Fork Certified T-Shirt">
+        <h3>Deep Fork Certified T-Shirt</h3>
+        <p>$22 — Available in multiple sizes</p>
+        <a href="https://yourstore.printful.com/deep-fork-shirt" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="images/okmulgee-hoodie.jpg" alt="Okmulgee County Hoodie">
+        <h3>Okmulgee County Hoodie</h3>
+        <p>$38 — Cozy and durable</p>
+        <a href="https://yourstore.printful.com/okmulgee-hoodie" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="product">
+        <img src="images/sticker-pack.jpg" alt="Okmulgee Sticker Pack">
+        <h3>Okmulgee Sticker Pack</h3>
+        <p>$8 — Includes 5 unique designs</p>
+        <a href="https://yourstore.printful.com/sticker-pack" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:2rem;">Or <a href="https://yourstore.printful.com" target="_blank">browse the full store</a></p>
+  </main>
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+  </footer>
+</body>
+</html>

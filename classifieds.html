@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Okmulgee.xyz — Classifieds</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #8FCFD1; /* blue background */
+      color: #000;
+    }
+    header {
+      background-color: #0F5F67; /* dark teal */
+      color: #E8D2A6; /* light cream */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #F2994A; /* orange */
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #E8D2A6;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a[aria-current="page"] {
+      background: #0F5F67;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #000;
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #0F5F67;
+    }
+    .ad {
+      border: 1px solid #F2994A;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      background-color: #FAF3E0;
+    }
+    .ad h3 {
+      margin: 0 0 0.5rem 0;
+      color: #0F5F67;
+    }
+    .ad p {
+      margin: 0.25rem 0;
+    }
+    .disclaimer {
+      max-width: 900px;
+      margin: 1rem auto 3rem auto;
+      background: #E8D2A6;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      color: #0F5F67;
+      font-weight: bold;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      main, .disclaimer {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OKMULGEE.XYZ</h1>
+    <p>"DEEP FORK CERTIFIED"</p>
+  </header>
+  <nav>
+    <a href="index.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="lists.html">Lists</a>
+    <a href="directory.html">Business Directory</a>
+    <a href="classifieds.html" aria-current="page">Classifieds</a>
+    <a href="merch.html">Merchandise</a>
+    <a href="">Awards</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Classifieds</h2>
+
+    <div class="ad">
+      <h3>Used Bicycle for Sale</h3>
+      <p><strong>Price:</strong> $75</p>
+      <p><strong>Description:</strong> Well-maintained mountain bike, perfect for trails and city rides. Tires recently replaced. Contact: 555-1234.</p>
+      <p><em>Posted: June 25, 2025</em></p>
+    </div>
+  </main>
+
+  <div class="disclaimer">
+    Ads run for 30 days after date posted unless removal requested.<br /><br />
+    By submitting an ad, you confirm that your listing is legal and truthful. Ads for stolen, illegal, or prohibited items will be removed.
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Okmulgee.xyz — All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
